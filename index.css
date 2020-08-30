@@ -1,0 +1,408 @@
+.letra {
+    font-size: 25px;
+    color: gray;
+    margin: 0 5px;
+}
+
+.cabecera {
+    border-bottom: 5px solid gray;
+}
+
+a:hover {
+    background: #D8D8D8;
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+header h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-family: 'Kanit', sans-serif;
+}
+
+
+/* SECTION*/
+
+section {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "texto__section  texto__section  texto__section  texto__section" "diseño__section web__section seo__section responsive__section";
+}
+
+.texto__section {
+    grid-area: texto__section;
+    text-align: center;
+    margin: 30px;
+}
+
+.diseño__section {
+    grid-area: diseño__section;
+    padding: 30px;
+    border: 1px solid lightslategray;
+    margin: 2%;
+}
+
+.web__section {
+    grid-area: web__section;
+    padding: 30px;
+    border: 1px solid lightslategray;
+    margin: 2%;
+}
+
+.seo__section {
+    grid-area: seo__section;
+    padding: 30px;
+    border: 1px solid lightslategray;
+    margin: 2%;
+}
+
+.responsive__section {
+    grid-area: responsive__section;
+    padding: 30px;
+    border: 1px solid lightslategray;
+    margin: 2%;
+}
+
+section h3 {
+    font-family: 'Overpass', sans-serif;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+section h2 {
+    color: #5f5fff;
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif;
+}
+
+section p {
+    text-align: center;
+}
+
+section hr {
+    height: 2px;
+    border: 0;
+    color: lightslategrey;
+    background-color: lightslategrey;
+}
+
+.diseño__section:hover {
+    -webkit-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+}
+
+.web__section:hover {
+    -webkit-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+}
+
+.seo__section:hover {
+    -webkit-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+}
+
+.responsive__section:hover {
+    -webkit-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+}
+
+
+/* aside  */
+
+aside {
+    width: 90%;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "texto__aside texto__aside texto__aside" "basico__aside empresarial__aside sistemas__aside";
+}
+
+.texto__aside {
+    grid-area: texto__aside;
+    text-align: center;
+    margin: 30px;
+}
+
+.basico__aside {
+    grid-area: basico__aside;
+    padding: 30px;
+    border: 1px solid lightslategray;
+    margin: 2%;
+}
+
+.empresarial__aside {
+    grid-area: empresarial__aside;
+    padding: 30px;
+    border: 1px solid lightslategray;
+    margin: 2%;
+}
+
+.sistemas__aside {
+    grid-area: sistemas__aside;
+    padding: 30px;
+    border: 1px solid lightslategray;
+    margin: 2%;
+}
+
+aside hr {
+    height: 2px;
+    border: 0;
+    color: lightslategrey;
+    background-color: lightslategrey;
+}
+
+aside h3 {
+    font-family: 'Overpass', sans-serif;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+aside h4 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+aside p {
+    text-align: center;
+}
+
+aside h2 {
+    color: #5f5fff;
+    font-weight: bold;
+    font-family: 'Overpass', sans-serif;
+}
+
+.basico__aside:hover {
+    -webkit-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+}
+
+.empresarial__aside:hover {
+    -webkit-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+}
+
+.sistemas__aside:hover {
+    -webkit-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    -moz-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.68);
+}
+
+aside .caracteristicas {
+    list-style: none;
+    font-weight: bold;
+}
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: #3f3f3f;
+    padding-top: 20px;
+    border-top: 2px solid lightslategray;
+}
+
+footer div {
+    width: 100%;
+    margin: auto;
+}
+
+footer i {
+    padding: 5px;
+    cursor: pointer;
+}
+
+footer h3,
+footer h4 {
+    font-size: 20px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 3px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+footer .fa-facebook-f {
+    background: #3b5998;
+}
+
+footer .fa-facebook-messenger {
+    background: #0084ff;
+}
+
+footer .fa-whatsapp {
+    background: #25d366;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+    transform: scale(1.2);
+}
+
+
+/*social*/
+
+.social .fab {
+    width: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.social {
+    position: fixed;
+    left: -40px;
+    top: 250px;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    padding-right: 40px;
+    padding-left: 20px;
+    z-index: 100;
+    transition: 0.1s ease;
+}
+
+.social .fa-facebook-f {
+    background: #3b5998;
+}
+
+.social .fa-facebook-messenger {
+    background: #0084ff;
+}
+
+.social .fa-whatsapp {
+    background: #25d366;
+}
+
+.social a:hover {
+    padding: 10px 45px;
+}
+
+
+/*  RESPONSIVE */
+
+
+/* menu */
+
+@media screen and (max-width:760px) {
+    .logo {
+        margin: auto;
+    }
+    header h2,
+    header h3 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .social .fa-facebook-f {
+        background: #3b5998;
+        opacity: 0.7;
+    }
+    .social .fa-facebook-messenger {
+        background: #0084ff;
+        opacity: 0.7;
+    }
+    .social .fa-whatsapp {
+        background: #25d366;
+        opacity: 0.7;
+    }
+}
+
+
+/* section */
+
+@media screen and (max-width:768px) {
+    section {
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto 1fr 1fr 1fr 1fr;
+        grid-template-areas: "texto__section  texto__section  texto__section  texto__section" "diseño__section diseño__section diseño__section diseño__section" "web__section web__section web__section web__section" "seo__section seo__section seo__section seo__section" "responsive__section responsive__section responsive__section responsive__section";
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+    section {
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "texto__section  texto__section  texto__section  texto__section" "diseño__section diseño__section web__section web__section" "seo__section seo__section responsive__section responsive__section";
+    }
+}
+
+
+/*aside*/
+
+@media screen and (max-width:700px) {
+    aside {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto 1fr 1fr 1fr;
+        grid-template-areas: "texto__aside  texto__aside  texto__aside" "basico__aside basico__aside basico__aside" "empresarial__aside empresarial__aside empresarial__aside" "sistemas__aside sistemas__aside sistemas__aside";
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+    aside {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-areas: "texto__aside  texto__aside" "basico__aside empresarial__aside" "sistemas__aside sistemas__aside";
+    }
+    aside div:nth-child(4) {
+        justify-self: center;
+        width: 50%;
+    }
+}

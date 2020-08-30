@@ -1,0 +1,243 @@
+.letra {
+    font-size: 25px;
+    color: gray;
+    margin: 0 5px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.cabecera {
+    border-bottom: 5px solid gray;
+}
+
+a:hover {
+    background: #D8D8D8;
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header {
+    width: 100%;
+}
+
+header h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+header h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+
+/*aside*/
+
+aside {
+    width: 90%;
+    margin: auto;
+}
+
+aside img {
+    object-fit: cover;
+    -webkit-box-shadow: 0px 1px 13px 1px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 1px 13px 1px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 1px 13px 1px rgba(0, 0, 0, 0.7);
+}
+
+
+/*section*/
+
+section {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "texto__section texto__section" "formulario__section mapa__section";
+}
+
+.texto__section {
+    grid-area: texto__section;
+    text-align: center;
+    margin: 20px;
+    color: #5f5fff
+}
+
+section hr {
+    background: lightslategray;
+    border: 1px solid lightslategray;
+}
+
+section h2 {
+    margin: 10px;
+    color: #5f5fff;
+}
+
+.formulario__section {
+    grid-area: formulario__section;
+    margin: 20px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+}
+
+.formulario__section input {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.mapa__section {
+    grid-area: mapa__section;
+    margin: 20px;
+}
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: #3f3f3f;
+    padding-top: 20px;
+    border-top: 2px solid lightslategray;
+}
+
+footer div {
+    width: 100%;
+    margin: auto;
+}
+
+footer i {
+    padding: 5px;
+    cursor: pointer;
+}
+
+footer h3,
+footer h4 {
+    font-size: 20px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 3px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+footer .fa-facebook-f {
+    background: #3b5998;
+}
+
+footer .fa-facebook-messenger {
+    background: #0084ff;
+}
+
+footer .fa-whatsapp {
+    background: #25d366;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+    transform: scale(1.2);
+}
+
+
+/*social*/
+
+.social .fab {
+    width: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.social {
+    position: fixed;
+    left: -40px;
+    top: 250px;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    padding-right: 40px;
+    padding-left: 20px;
+    z-index: 1;
+    transition: 0.1s ease;
+}
+
+.social .fa-facebook-f {
+    background: #3b5998;
+}
+
+.social .fa-facebook-messenger {
+    background: #0084ff;
+}
+
+.social .fa-whatsapp {
+    background: #25d366;
+}
+
+.social a:hover {
+    padding: 10px 45px;
+}
+
+
+/*responsive*/
+
+
+/*section*/
+
+@media screen and (max-width:768px) {
+    section {
+        grid-template-columns: 100%;
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-areas: "texto__section texto__section" "formulario__section formulario__section" "mapa__section mapa__section";
+    }
+    section img {
+        object-fit: cover;
+    }
+    .social .fa-facebook-f {
+        background: #3b5998;
+        opacity: 0.7;
+    }
+    .social .fa-facebook-messenger {
+        background: #0084ff;
+        opacity: 0.7;
+    }
+    .social .fa-whatsapp {
+        background: #25d366;
+        opacity: 0.7;
+    }
+}

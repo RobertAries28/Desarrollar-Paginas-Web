@@ -1,0 +1,314 @@
+.letra {
+    font-size: 25px;
+    color: gray;
+    margin: 0 5px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+.cabecera {
+    border-bottom: 5px solid gray;
+}
+
+a:hover {
+    background: #D8D8D8;
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav {
+    width: 100%;
+}
+
+nav h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+nav h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+
+/*aside*/
+
+aside {
+    background: #424242;
+    height: 500px;
+    padding-top: 100px;
+}
+
+aside img {
+    display: block;
+    margin: auto;
+    -webkit-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.88);
+    box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.88);
+}
+
+aside h1 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 80px;
+}
+
+aside hr {
+    background: white;
+    margin-bottom: 40px;
+    width: 70%;
+}
+
+
+/*section*/
+
+section {
+    width: 70%;
+    margin: auto;
+    margin-top: 300px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "texto__section texto__section texto__section texto__section" "imagen__section imagen__section imagen__section imagen__section " "mision__section mision__section vision__section vision__section" "valores__section valores__section valores__section valores__section ";
+}
+
+.texto__section {
+    grid-area: texto__section;
+}
+
+.texto__section p {
+    border-top: 3px solid #7d7d7d;
+    padding-top: 10px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.imagen__section {
+    grid-area: imagen__section;
+    margin-top: 10px;
+    -webkit-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.88);
+    -moz-box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.88);
+    box-shadow: 0px 7px 28px -4px rgba(0, 0, 0, 0.88);
+}
+
+.mision__section {
+    grid-area: mision__section;
+    margin: 0px 20px;
+    margin-top: 40px;
+    border-top: 3px solid #7d7d7d;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.vision__section {
+    grid-area: vision__section;
+    margin: 0px 20px;
+    margin-top: 40px;
+    border-top: 3px solid #7d7d7d;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.valores__section {
+    grid-area: valores__section;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+section img {
+    object-fit: cover;
+}
+
+
+/*footer*/
+
+footer {
+    width: 100%;
+    text-align: center;
+    background: #3f3f3f;
+    padding-top: 20px;
+    border-top: 2px solid lightslategray;
+}
+
+footer div {
+    width: 100%;
+    margin: auto;
+}
+
+footer i {
+    padding: 5px;
+    cursor: pointer;
+}
+
+footer h3,
+footer h4 {
+    font-size: 20px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 3px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+footer .fa-facebook-f {
+    background: #3b5998;
+}
+
+footer .fa-facebook-messenger {
+    background: #0084ff;
+}
+
+footer .fa-whatsapp {
+    background: #25d366;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+    transform: scale(1.2);
+}
+
+
+/*social*/
+
+.social .fab {
+    width: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.social {
+    position: fixed;
+    left: -40px;
+    top: 300px;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    padding-right: 40px;
+    padding-left: 20px;
+    z-index: 1;
+    transition: 0.1s ease;
+}
+
+.social .fa-facebook-f {
+    background: #3b5998;
+}
+
+.social .fa-facebook-messenger {
+    background: #0084ff;
+}
+
+.social .fa-whatsapp {
+    background: #25d366;
+}
+
+.social a:hover {
+    padding: 10px 45px;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width:768px) {
+    aside {
+        height: 300px;
+        padding-top: 50px;
+    }
+    aside img {
+        height: 250px;
+        object-fit: cover;
+    }
+    aside h1 {
+        font-size: 50px;
+    }
+    /*section*/
+    section {
+        margin-top: 160px;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "texto__section texto__section texto__section texto__section" "imagen__section imagen__section imagen__section imagen__section " "mision__section mision__section mision__section mision__section" "vision__section vision__section vision__section vision__section" "valores__section valores__section valores__section valores__section ";
+    }
+    .texto__section p {
+        font-size: 13px;
+        text-align: justify;
+    }
+    .vision__section {
+        margin-top: 20px;
+    }
+    .vision__section p {
+        font-size: 13px;
+        text-align: justify;
+    }
+    .mision__section p {
+        font-size: 13px;
+        text-align: justify;
+    }
+    .valores__section {
+        flex-wrap: wrap;
+    }
+    .valores__section h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .valores__section div {
+        padding: 5px;
+        flex-grow: 1;
+    }
+    section h2 {
+        margin-bottom: 10px;
+    }
+    .social .fa-facebook-f {
+        background: #3b5998;
+        opacity: 0.7;
+    }
+    .social .fa-facebook-messenger {
+        background: #0084ff;
+        opacity: 0.7;
+    }
+    .social .fa-whatsapp {
+        background: #25d366;
+        opacity: 0.7;
+    }
+}
+
+@media screen and (width:1024px) {
+    aside img {
+        height: 500px;
+        object-fit: cover;
+    }
+}
